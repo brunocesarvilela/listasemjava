@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Listas8 {
+public class ListascomMenu {
     public static void main(String[] args) {
         //Definir as variáveis
         int opcao = 0;
@@ -15,7 +15,7 @@ public class Listas8 {
             System.out.println("2 - Remover item");
             System.out.println("3 - Alterar item");
             System.out.println("4 - Listar itens");
-            System.out.println("5 - Listar lista");
+            System.out.println("5 - Limpar lista");
             System.out.println("6 - Finalizar");
             System.out.print("Digite a opção desejada: ");
 
@@ -55,6 +55,15 @@ public class Listas8 {
                         }
                     }
                     break;
+                    case 4:
+                        System.out.println("Esta é a lista: " + nomes);
+                        break;
+                    case 5:
+                        nomes.clear();
+                        System.out.println("A lista foi esvaziada: " + nomes);
+                        break;
+                    case 6:
+                        break;
             }
         }
     }
